@@ -7,8 +7,8 @@ const Navbar = () => {
   return (
     <>
     {/* main container */}
-    <div className='bg-white'>
-            <ul className='bg-red-800 w-48 text-3xl flex justify-evenly p-1 ml-auto'>
+    <div className='bg-white shadow-2xl'>
+            <ul className='bg-red-700 w-48 text-3xl flex justify-evenly p-2 ml-auto shadow-2xl'>
                 <li>
                     <a href='#' className='text-black hover:text-blue-700'><AiFillTikTok /></a>
                 </li>
@@ -21,7 +21,7 @@ const Navbar = () => {
 
 
 
-    <div className='bg-orange-600 p-8 flex items-center justify-between'>
+    <div className='bg-orange-600 p-3 flex items-center justify-between shadow-2xl'>
         {/* logo for the website */}
         <img src={logo} alt='logo' className='w-20 rounded-xl' /> 
         {/* links for the web pages */}
