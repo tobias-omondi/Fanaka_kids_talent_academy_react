@@ -1,13 +1,14 @@
 import React from 'react'
 import { AiFillTikTok, AiOutlineWhatsApp } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
+import logo from '../assets/fanakakidslogo.jpeg'
 
 const Navbar = () => {
   return (
     <>
     {/* main container */}
-    <div className='bg-white w-screen'>
-            <ul className='bg-red-800 w-48 text-4xl flex justify-evenly p-2 ml-auto'>
+    <div className='bg-white'>
+            <ul className='bg-red-800 w-48 text-3xl flex justify-evenly p-1 ml-auto'>
                 <li>
                     <a href='#' className='text-black hover:text-blue-700'><AiFillTikTok /></a>
                 </li>
@@ -20,9 +21,9 @@ const Navbar = () => {
 
 
 
-    <div className='bg-orange-600 p-10 flex items-center justify-between'>
+    <div className='bg-orange-600 p-8 flex items-center justify-between'>
         {/* logo for the website */}
-        <p>FANAKA KIDS</p>  
+        <img src={logo} alt='logo' className='w-20 rounded-xl' /> 
         {/* links for the web pages */}
         <div className=' text-white flex-1 text-center space-x-9'>
             <Link to="/" >Home</Link>
