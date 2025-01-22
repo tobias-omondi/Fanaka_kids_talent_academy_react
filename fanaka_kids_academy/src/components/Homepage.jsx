@@ -4,7 +4,8 @@ import picone from '../assets/fanakapicone.jpeg';
 const Homepage = () => {
   return (
     <div className="h-screen">
-      <img src={picone} alt="fanaka_kids_picture" className="object-cover w-full h-full"  />
+      <img src={picone} alt="fanaka_kids_picture" className="object-cover w-full h-full mt-20"  />
+      <p>ujhceui</p>
     </div>
   );
 };
