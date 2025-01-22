@@ -103,8 +103,8 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="absolute top-20 left-0 w-full bg-orange-600 md:hidden shadow-2xl">
-            <div className="flex flex-col items-start space-y-4 py-4 px-7 cursor-pointer">
+          <div className="absolute top-20 left-0 w-full bg-orange-600 md:hidden shadow-2xl p-3">
+            <div className="flex flex-col items-start space-y-4 py-4 p-3 cursor-pointer">
               <Link to="/" className="text-white hover:text-red-700  hover:bg-orange-400 hover:w-full transition-all duration-700 cursor-pointer" onClick={toggleMobileMenu}>
                 Home
               </Link>
@@ -128,11 +128,11 @@ const Navbar = () => {
                 </button>
 
                 {isDropDownOpen && (
-                  <div className="flex flex-col items-center bg-orange-500 w-full shadow-1xl">
-                    <Link to="/images" className="text-white text-center hover:text-red-700 py-2 hover:bg-orange-400 hover:w-80 transition-all duration-700 cursor-pointer" onClick={toggleMobileMenu}>
+                  <div className="flex flex-col items-center bg-orange-500 w-screen shadow-1xl">
+                    <Link to="/images" className="text-white text-center hover:text-red-700 py-2 hover:bg-orange-400 hover:w-full transition-all duration-700 cursor-pointer" onClick={toggleMobileMenu}>
                       Images
                     </Link>
-                    <Link to="/videos" className="text-white text-center hover:text-red-700 py-2  hover:bg-orange-400 hover:w-80 transition-all duration-700 cursor-pointer" onClick={toggleMobileMenu}>
+                    <Link to="/videos" className="text-white text-center hover:text-red-700 py-2  hover:bg-orange-400 hover:w-full transition-all duration-700 cursor-pointer" onClick={toggleMobileMenu}>
                       Videos
                     </Link>
                   </div>
