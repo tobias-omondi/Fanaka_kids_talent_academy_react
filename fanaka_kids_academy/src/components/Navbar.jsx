@@ -103,7 +103,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="absolute top-20 left-0 w-full bg-orange-600 md:hidden shadow-2xl p-3">
+          <div className="absolute top-20 left-0 w-full bg-orange-600 md:hidden shadow-2xl p-4">
             <div className="flex flex-col items-start space-y-4 py-4 p-3 cursor-pointer">
               <Link to="/" className="text-white hover:text-red-700  hover:bg-orange-400 hover:w-full transition-all duration-700 cursor-pointer" onClick={toggleMobileMenu}>
                 Home
@@ -124,7 +124,7 @@ const Navbar = () => {
                   onClick={toggleDropdown}
                   className="flex items-center text-white hover:text-red-700 transition-all duration-700 cursor-pointer"
                 >
-                  Media <ChevronDown className="ml-96" />
+                  Media <ChevronDown className="ml-72" />
                 </button>
 
                 {isDropDownOpen && (
