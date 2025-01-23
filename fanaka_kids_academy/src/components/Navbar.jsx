@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <>
       {/* Social icons section */}
-      <div className="bg-white shadow-1xl fixed top-0 w-full">
+      <div className="bg-white shadow-1xl fixed top-0 w-full z-10">
         <ul className="bg-slate-200 w-60 text-3xl flex justify-evenly p-2 ml-auto shadow-2xl rounded-s-2xl">
           <li>
             <a href="#" className="text-black hover:text-gray-800">
@@ -38,7 +38,7 @@ const Navbar = () => {
 
 
       {/* Main Navbar container */}
-      <div className="bg-orange-600 p-3 flex items-center justify-between shadow-2xl fixed w-full top-10">
+      <div className="bg-orange-600 p-3 flex items-center justify-between shadow-2xl fixed w-full top-10 z-10">
         {/* Logo for the website */}
         <img src={logo} alt="logo" className="w-14 rounded-e-md m-3 shadow-xl" />
 
