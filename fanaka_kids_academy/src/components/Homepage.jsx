@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination , Autoplay, Navigation} from 'swiper/modules';
+import './slider.css'
 
 
 const Homepage = () => {
@@ -24,6 +25,7 @@ const Homepage = () => {
         delay:5000,
         disableOnInteraction:false,
       }}
+      className='swiper-container max-h-screen'
       >
 
         <SwiperSlide className='brightness-100'>
