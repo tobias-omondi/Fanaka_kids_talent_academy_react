@@ -19,7 +19,8 @@ const Homepage = () => {
       modules={[Pagination , Autoplay , Navigation]}
       navigation = {true}
       pagination = {{
-        dynamicBullets:true
+        dynamicBullets:true,
+        clickable:true
       }}
       autoplay = {{
         delay:5000,
@@ -27,15 +28,25 @@ const Homepage = () => {
       }}
       className='swiper-container max-h-screen'
       >
+        <SwiperSlide className='relative brightness-75'>
+         <img src={picone}  alt="fanaka_kids_picture"  className="object-cover w-full h-full" />
+           <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10 text-white'>
+            <h3 className='text-4xl md:text-3xl font-bold mb-4'>WELCOME, Little Explorers!</h3>
+             <button type='button' className='bg-black bg-opacity-60 hover:bg-opacity-90 text-white px-6 py-2 rounded-lg text-xl' > Learn More</button> </div>
+        </SwiperSlide>
 
-        <SwiperSlide className='brightness-100'>
-        <img src={picone} alt="fanaka_kids_picture" className="object-cover w-full h-full"/>
+        <SwiperSlide className='relative brightness-75'>
+         <img src={pictwo}  alt="fanaka_kids_picture"  className="object-cover w-full h-full" />
+           <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10 text-white'>
+            <h3 className='text-5xl md:text-3xl font-bold mb-4'>Adventure Awaits You!</h3>
+             <button type='button' className='bg-black bg-opacity-60 hover:bg-opacity-90 text-white px-6 py-2 rounded-lg text-xl' > Learn More</button> </div>
         </SwiperSlide>
-        <SwiperSlide >
-        <img src={pictwo} alt="fanaka_kids_picture" className="object-cover w-full  h-full"  />
-        </SwiperSlide>
-        <SwiperSlide >
-        <img src={picthree} alt="fanaka_kids_picture" className="object-cover w-full h-full"  />
+
+        <SwiperSlide className='relative brightness-75'>
+         <img src={picthree}  alt="fanaka_kids_picture"  className="object-cover w-full h-full" />
+           <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10 text-white'>
+            <h3 className='text-4xl md:text-3xl font-bold mb-4'>Play, Learn , Imagine!</h3>
+             <button type='button' className='bg-black bg-opacity-60 hover:bg-opacity-90 text-white px-6 py-2 rounded-lg text-xl' > Learn More</button> </div>
         </SwiperSlide>
       </Swiper>
       </div>
