@@ -31,3 +31,10 @@
 .swiper-pagination {
     cursor: pointer;
 }
+.swiper-pagination-bullet {
+    background-color: black; 
+}
+
+.swiper-pagination-bullet-active {
+    background-color: orange; 
+}
