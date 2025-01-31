@@ -35,7 +35,7 @@ const SectionCommun = ({ image }) => {
           </div>
 
           {/* Card 2 */}
-          <div className='bg-yellow-500 shadow-2xl text-center p-6 rounded-lg w-80 md:w-96'>
+          <div className='bg-orange-600 shadow-2xl text-center p-6 rounded-lg w-80 md:w-96'>
             <h3 className='text-2xl font-semibold text-gray-600 mb-4'>
               Events, Programs & Dates
             </h3>
