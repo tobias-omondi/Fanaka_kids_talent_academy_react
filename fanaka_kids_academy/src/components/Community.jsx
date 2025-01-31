@@ -2,7 +2,7 @@ import React from 'react';
 
 const Community = ({ title, description, image }) => {
   return (
-    <div className="mt-44 flex flex-col lg:flex-row items-center lg:items-start justify-between p-6 lg:p-12 rounded-lg shadow-lg">
+    <div className="mt-28 flex flex-col lg:flex-row items-center lg:items-start justify-between p-6 lg:p-12 rounded-lg">
       {/* Text Content */}
       <div className="w-full lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
         <h2 className="text-red-900 text-3xl lg:text-4xl font-bold mb-4">

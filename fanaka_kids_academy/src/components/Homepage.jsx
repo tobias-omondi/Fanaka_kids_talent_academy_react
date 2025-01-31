@@ -3,6 +3,7 @@ import picone from '../assets/fanakapicone.jpeg';
 import pictwo from '../assets/fanaka2.jpeg'
 import picthree from '../assets/fanaka3.jpeg'
 import childimage from '../assets/community.jpeg'
+import childimage2 from '../assets/community2.jpeg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -13,6 +14,7 @@ import { GiBallerinaShoes } from "react-icons/gi"
 import { FaChess } from "react-icons/fa6";
 import { PiMicrophoneStageDuotone } from "react-icons/pi";
 import Community from './Community';
+import SectionCommun from './SectionCommun';
 
 
 const Homepage = () => {
@@ -56,16 +58,16 @@ const Homepage = () => {
       </Swiper>
       </div>
         {/* Centered Container */}
-        <div className="absolute top-100 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 bg-orange-600 shadow-2xl rounded-lg py-4 md:py-0">
+        <div className="absolute top-100 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 bg-orange-600 shadow-2xl rounded-lg py-6 md:py-5">
         <div className=" max-h-48 w-full flex items-center justify-center md:px-28 ">
           <h3 className="text-center text-white text-1xl md:text-4xl w-full font-light font-serif">
             Best place <br /> for your child
           </h3>
         </div>
         <div className='text-yellow-50 flex justify-center w-full gap-10 md:gap-52'>
-            <GiBallerinaShoes size={70} />
-            <FaChess size={70} />
-            <PiMicrophoneStageDuotone size={70} />
+            <GiBallerinaShoes size={50} />
+            <FaChess size={50} />
+            <PiMicrophoneStageDuotone size={50} />
           </div>
       </div>
       <Community 
@@ -74,6 +76,7 @@ const Homepage = () => {
 From the graceful movements of ballet dancers to the strategic minds of chess players and the captivating orators, these children are poised to inspire and amaze. Their performances promise to be a delightful blend of artistry, intellect, eloquence, and public speaking."
       image = {childimage}
       />
+      <SectionCommun image={childimage2} />
     </div>
   );
 };
