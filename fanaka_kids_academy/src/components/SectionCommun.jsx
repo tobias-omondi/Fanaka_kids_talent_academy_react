@@ -6,7 +6,7 @@ const SectionCommun = ({ image }) => {
   return (
     <>
       {/* Main container */}
-      <div className='mt-10 flex flex-col-reverse md:flex-row justify-start p-4 relative'>
+      <div className='mt-10 flex flex-1 flex-col-reverse md:flex-row justify-start p-4 relative'>
         {/* Image styling */}
         <div className='w-full md:w-1/2 flex justify-center'>
           <img
@@ -17,9 +17,9 @@ const SectionCommun = ({ image }) => {
         </div>
 
         {/* Cards container */}
-        <div className='w-full md:w-2/3 mt-8 md:mt-14 flex flex-col gap-4 md:absolute md:left-96 md:top-9 md:flex md:flex-row'>
+        <div className='w-full md:w-2/3 mt-8 md:mt-14 flex flex-col gap-5 md:absolute md:left-1/4 md:top-9 md:flex md:flex-row items-center md:max-h-80 md:max-w-3/4'>
           {/* Card 1 */}
-          <div className='bg-white shadow-2xl text-center p-6 rounded-lg w-80 md:w-96'>
+          <div className='bg-white shadow-2xl text-center p-6 rounded-lg w-80 md:w-full'>
             <h3 className='text-2xl font-semibold text-gray-600 mb-4'>
               Advocacy & Student Blog
             </h3>
@@ -33,9 +33,10 @@ const SectionCommun = ({ image }) => {
               Visit
             </button>
           </div>
+          
 
           {/* Card 2 */}
-          <div className='bg-orange-600 shadow-2xl text-center p-6 rounded-lg w-80 md:w-96'>
+          <div className='bg-orange-600 shadow-2xl text-center p-6 rounded-lg w-80 md:w-full'>
             <h3 className='text-2xl font-semibold text-gray-600 mb-4'>
               Events, Programs & Dates
             </h3>
@@ -51,11 +52,11 @@ const SectionCommun = ({ image }) => {
           </div>
 
           {/* Card 3 */}
-          <div className='bg-red-800 shadow-2xl text-center p-6 rounded-lg w-80 md:w-96'>
+          <div className='bg-red-800 shadow-2xl text-center p-6 rounded-lg w-80 md:w-full'>
             <h3 className='text-2xl font-semibold text-gray-600 mb-4'>
               Videos & Gallery Page
             </h3>
-            <p className='text-gray-500 mb-4'>
+            <p className='text-gray-500 mb-1'>
               A Visual Journey: Watch our students shine in ballet, chess, and public speaking performances.
             </p>
             <button

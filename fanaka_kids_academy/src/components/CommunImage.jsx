@@ -6,10 +6,10 @@ const CommunImage = ({ image }) => {
   return (
     <div className='mt-14 relative'>
       {/* Image */}
-      <img src={image} alt='children_playing_chess' className='w-full max-h-96 md:max-h-full object-cover'/>
+      <img src={image} alt='children_playing_chess' className='w-full max-h-96  object-cover'/>
 
       {/* Overlay Text and Button */}
-      <div className='absolute top-32 md:top-2/4 md:left-72 left-32 transform -translate-x-1/2 -translate-y-1/2 text-center z-10 text-white'>
+      <div className='absolute top-32 md:top-1/4 md:left-72 left-32 transform -translate-x-1/2 -translate-y-1/2 text-center z-10 text-white'>
         <h2 className='text-2xl text-start md:text-5xl font-bold mb-4'>
           What does Fanaka <br/> Talent Offer to <br/> your Child?
         </h2>
