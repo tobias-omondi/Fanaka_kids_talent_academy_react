@@ -5,6 +5,10 @@ import { TfiEmail } from 'react-icons/tfi';
 
 const Footer = ({ image }) => {
   return (
+    <>
+    <div className='bg-orange-600 py-5 md:py-10 justify-center'>
+        <p className='text-center text-white text-1xl mx-9 md:mx-0 md:text-2xl'>GET INVOLVED WITH FANAKA TALENT ACADEMY.</p>
+      </div>
     <div className="bg-red-800 py-12">
       {/* Main components */}
       <div className="flex flex-col flex-1 justify-between px-10 md:flex-row">
@@ -65,6 +69,7 @@ const Footer = ({ image }) => {
            <p className="mt-2">© {new Date().getFullYear()} Fanaka Kids Talent Academy. All Rights Reserved.</p>
       </div>
     </div>
+    </>
   );
 };
 

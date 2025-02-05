@@ -20,9 +20,6 @@ const CommunImage = ({ image }) => {
           Learn More
         </button>
       </div>
-      <div className='bg-orange-600 py-5 md:py-10 justify-center'>
-        <p className='text-center text-white text-1xl mx-9 md:mx-0 md:text-2xl'>GET INVOLVED WITH FANAKA TALENT ACADEMY.</p>
-      </div>
       <Footer image = {logoforfooter} />
     </div>
   );
