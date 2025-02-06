@@ -53,7 +53,7 @@ const Testimonial = ({ slides }) => {
               <img 
                 src={slide.image} 
                 alt={`Slide ${index + 1}`} 
-                className="max-w-48 max-h-48 md:w-48 md:h-48 object-cover rounded-full shadow-xl mb-4"
+                className="max-w-28 max-h-28 md:w-32 md:h-32 object-cover rounded-full shadow-xl mb-4"
               />
               <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-500">{slide.title}</h3>
               <p className="text-sm md:text-base px-2 bg-slate-200 rounded-b-xl h-32 text-gray-600 drop-shadow-md">
