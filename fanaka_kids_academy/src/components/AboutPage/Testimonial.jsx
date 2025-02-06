@@ -8,22 +8,23 @@ import { Pagination, Autoplay, Navigation } from 'swiper/modules'
 const Testimonial = ({ slides }) => {
   return (
     <div className="mt-20 px-4 md:px-0">
+      <div><h3 className='text-center text-gray-500 text-2xl md:text-4xl '>Testimonial</h3></div>
       <Swiper
         modules={[Pagination, Navigation, Autoplay]}
         slidesPerView={1}
         spaceBetween={30}
         breakpoints={{
-          // When window width is >= 640px
+        
           640: {
             slidesPerView: 1,
             spaceBetween: 20
           },
-          // When window width is >= 768px
+          
           768: {
             slidesPerView: 2,
             spaceBetween: 30
           },
-          // When window width is >= 1024px
+          
           1024: {
             slidesPerView: 3,
             spaceBetween: 50
