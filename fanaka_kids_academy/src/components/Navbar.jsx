@@ -91,9 +91,9 @@ const Navbar = () => {
             )}
           </div>
 
-          <Link to="/games" className="text-white hover:text-red-700">
+          {/* <Link to="/games" className="text-white hover:text-red-700">
             Game
-          </Link>
+          </Link> */}
           <Link to="/contact" className="text-white hover:text-red-700">
             Contact Us
           </Link>
@@ -139,9 +139,9 @@ const Navbar = () => {
                 )}
               </div>
 
-              <Link to="/games" className="text-white hover:text-red-700  hover:bg-orange-400 hover:w-full transition-all duration-700 cursor-pointer" onClick={toggleMobileMenu}>
+              {/* <Link to="/games" className="text-white hover:text-red-700  hover:bg-orange-400 hover:w-full transition-all duration-700 cursor-pointer" onClick={toggleMobileMenu}>
                 Game
-              </Link>
+              </Link> */}
               <Link to="/contact" className="text-white hover:text-red-700  hover:bg-orange-400 hover:w-full transition-all duration-700 cursor-pointer" onClick={toggleMobileMenu}>
                 Contact Us
               </Link>
