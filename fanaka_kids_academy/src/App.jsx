@@ -5,12 +5,15 @@ import Homepage from './components/Homepage'
 import Aboutpage from './components/AboutPage/Aboutpage'
 import Contactpage from './components/ContactPage/Contactpage'
 import MainBlog from './components/BlogPage/MainBlog'
+import { Scroll } from 'lucide-react'
+import ScrollToTop from './components/ScrollTop'
 
 function App() {
   return (
     <>
     <div>
       <Router>
+        <ScrollToTop/>
         <Navbar />
         <Routes>
           <Route path='/' element = {<Homepage/>} />
