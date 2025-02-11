@@ -7,6 +7,7 @@ import Contactpage from './components/ContactPage/Contactpage'
 import MainBlog from './components/BlogPage/MainBlog'
 import { Scroll } from 'lucide-react'
 import ScrollToTop from './components/ScrollTop'
+import GalleryImagepage from './components/Media/GalleryImagepage'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/about' element = {<Aboutpage/>} />
           <Route path='/contact' element = {<Contactpage/>} />
           <Route path='/blog' element = {<MainBlog/>} />
+          <Route path='/images' element = {<GalleryImagepage />} />
         </Routes>
       </Router>
     </div>

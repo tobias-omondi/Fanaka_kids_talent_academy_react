@@ -29,7 +29,7 @@ const EventsDates = () => {
               alt={event.title}
               className="w-full md:w-60 h-48 object-cover rounded-lg mb-4 md:mb-0"
             />
-            <div className="flex-1 md:ml-6 text-center md:text-left">
+            <div className="flex-1 md:ml-20 text-center md:text-left">
               <h3 className="text-2xl font-bold text-orange-500 mb-2">{event.title}</h3>
               <p className="text-gray-800 mb-4">{event.description}</p>
             </div>

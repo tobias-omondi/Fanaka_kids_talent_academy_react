@@ -1,9 +1,12 @@
-import React from 'react'
+import { useState, useEffect } from "react"
+import Gallery from "./Gallery"
 
 const GalleryImagepage = () => {
   return (
-    <div>
+    <div className="mt-28">
       <h1>Images</h1>
+      <div></div>
+      <Gallery />
     </div>
   )
 }
