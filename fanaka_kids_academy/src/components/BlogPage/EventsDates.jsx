@@ -22,7 +22,7 @@ const EventsDates = () => {
         {events.map((event) => (
           <div
             key={event.id}
-            className="flex flex-col md:flex-row justify-between items-center  text-center bg-gray-500 text-black p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="flex flex-col md:flex-row justify-between items-center  text-center bg-gray-100 text-black p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
             <img
               src={`http://127.0.0.1:8000${event.image}`}
@@ -30,8 +30,8 @@ const EventsDates = () => {
               className="w-full md:w-60 h-48 object-cover rounded-lg mb-4 md:mb-0"
             />
             <div className="flex-1 md:ml-6 text-center md:text-left">
-              <h3 className="text-2xl font-bold mb-2">{event.title}</h3>
-              <p className="text-gray-200 mb-4">{event.description}</p>
+              <h3 className="text-2xl font-bold text-orange-500 mb-2">{event.title}</h3>
+              <p className="text-gray-800 mb-4">{event.description}</p>
             </div>
             <h4 className="text-xl bg-orange-500 shadow-xl px-4 py-2 ">
               {event.event_date}
