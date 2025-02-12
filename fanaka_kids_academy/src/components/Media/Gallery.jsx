@@ -42,9 +42,11 @@ const Gallery = () => {
     );
   };
 
+  
+
   return (
     <div className="container mx-auto px-4 py-8">
-      <h2 className="text-center text-3xl font-bold mb-8 text-gray-800">Gallery</h2>
+      <h2 className="text-center text-3xl font-bold mb-8 text-red-800">Gallery</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {images.map((image, index) => (
           <div
@@ -55,7 +57,7 @@ const Gallery = () => {
             <img
               src={`http://127.0.0.1:8000${image.image}`}
               alt={image.title || "Gallery Image"}
-              className="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300"
+              className="w-full h-80 object-cover transform hover:scale-105 transition-transform duration-500"
             />
             {image.title && (
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
@@ -140,7 +142,7 @@ const Gallery = () => {
             {/* Close Button */}
             <button
               className="absolute top-4 right-4 rounded-full p-2 transition-colors duration-300 bg-orange-100 hover:bg-orange-800 animate-bounce shadow-xl"
-              onClick={closeModal} // Close modal when clicking the close button
+              onClick={closeModal} 
             >
                 <IoIosClose size={25}/>
             </button>
