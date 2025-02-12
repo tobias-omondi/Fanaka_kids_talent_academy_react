@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import Gallery from "./Gallery";
-import galleryImage from "/src/assets/Publicspeaking.jpg";
+import galleryImage from "/src/assets/Black children dancing ballet.jpg";
 import Footer from "../Footer";
-import logoforfooter from '/src/assets/fanakakidslogo.jpeg';
+import logoforfooter from '/src/assets/fanakakidslogo.jpeg'; 
 
 const GalleryImagepage = () => {
   return (
