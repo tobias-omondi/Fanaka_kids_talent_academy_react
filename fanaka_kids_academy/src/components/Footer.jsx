@@ -52,9 +52,9 @@ const Footer = ({ image }) => {
               <TfiEmail />
               <span>info@fanakakids.com</span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center  gap-2">
               <MdOutlineCall />
-              <span>+123 456 789</span>
+              <span>+254 725 477 131 || +254 7........</span>
             </div>
             <div className="flex items-center gap-2">
               <CiLocationOn />

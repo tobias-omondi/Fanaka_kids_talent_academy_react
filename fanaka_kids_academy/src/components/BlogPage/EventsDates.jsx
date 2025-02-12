@@ -33,9 +33,12 @@ const EventsDates = () => {
               <h3 className="text-2xl font-bold text-orange-500 mb-2">{event.title}</h3>
               <p className="text-gray-800 mb-4">{event.description}</p>
             </div>
-            <h4 className="text-xl bg-orange-500 shadow-xl px-4 py-2 ">
+            <div className="flex flex-col py-4">
+              <h3 className="text-xl bg-orange-500 shadow-xl px-3 py-2">Dates</h3>
+            <h4 className="text-xl text-red-800 ">
               {event.event_date}
             </h4>
+            </div>
           </div>
         ))}
       </div>
