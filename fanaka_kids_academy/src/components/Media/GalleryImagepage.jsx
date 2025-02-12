@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import Gallery from "./Gallery";
 import galleryImage from "/src/assets/Publicspeaking.jpg";
+import Footer from "../Footer";
+import logoforfooter from '/src/assets/fanakakidslogo.jpeg';
 
 const GalleryImagepage = () => {
   return (
@@ -28,6 +30,9 @@ const GalleryImagepage = () => {
       {/* Gallery Component */}
       <div className="mt-5 md:mt-10 px-4 md:px-16">
         <Gallery />
+      </div>
+      <div>
+      <Footer image={logoforfooter}/>
       </div>
     </div>
   );

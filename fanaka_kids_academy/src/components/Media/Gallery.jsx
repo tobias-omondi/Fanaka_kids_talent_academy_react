@@ -42,25 +42,25 @@ const Gallery = () => {
     );
   };
 
-  
+
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-2 py-2">
       <h2 className="text-center text-3xl font-bold mb-8 text-red-800">Gallery</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
         {images.map((image, index) => (
           <div
             key={image.id}
-            className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            className="relative overflow-hidden  shadow-xl hover:shadow-xl transition-shadow duration-300 cursor-pointer"
             onClick={() => openModal(image, index)} // Open modal on click and pass the index
           >
             <img
               src={`http://127.0.0.1:8000${image.image}`}
               alt={image.title || "Gallery Image"}
-              className="w-full h-80 object-cover transform hover:scale-105 transition-transform duration-500"
+              className="w-full h-80 object-cover transform hover:scale-105 hover:brightness-75 transition-transform duration-700"
             />
             {image.title && (
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 flex items-center  bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white text-lg font-semibold text-center">
                   {image.title}
                 </p>
