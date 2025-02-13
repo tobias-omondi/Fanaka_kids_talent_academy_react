@@ -32,7 +32,7 @@ const SectionCommun = ({ image }) => {
           {/* Card 1 */}
           <div className='bg-white shadow-2xl text-center p-6 rounded-lg w-80 md:w-full'>
             <h3 className='text-2xl font-semibold text-gray-600 mb-4'>
-              Advocacy & Student Blog
+              Our Mission & History 
             </h3>
             <p className='text-gray-500 mb-4'>
               Empowering children through arts, strategy, and communication.
@@ -49,10 +49,10 @@ const SectionCommun = ({ image }) => {
 
           {/* Card 2 */}
           <div className='bg-orange-600 shadow-2xl text-center p-6 rounded-lg w-80 md:w-full'>
-            <h3 className='text-2xl font-semibold text-gray-600 mb-4'>
-              Events, Programs & Dates
+            <h3 className='text-2xl font-semibold text-gray-300 mb-4'>
+            Student Blog ,Events & Dates
             </h3>
-            <p className='text-gray-500 mb-4'>
+            <p className='text-gray-300 mb-4'>
               A year of growth and achievement—recapping our 2024 and looking ahead to 2025.
             </p>
             <button
@@ -66,10 +66,10 @@ const SectionCommun = ({ image }) => {
 
           {/* Card 3 */}
           <div className='bg-red-800 shadow-2xl text-center p-6 rounded-lg w-80 md:w-full'>
-            <h3 className='text-2xl font-semibold text-gray-600 mb-4'>
+            <h3 className='text-2xl font-semibold text-gray-400 mb-4'>
               Videos & Gallery Page
             </h3>
-            <p className='text-gray-500 mb-1'>
+            <p className='text-gray-400 mb-1'>
               A Visual Journey: Watch our students shine in ballet, chess, and public speaking performances.
             </p>
             <button
