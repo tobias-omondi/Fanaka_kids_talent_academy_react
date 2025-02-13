@@ -3,6 +3,7 @@ import Gallery from "./Gallery";
 import galleryImage from "/src/assets/Publicspeaking.jpg";
 import Footer from "../Footer";
 import logoforfooter from '/src/assets/fanakakidslogo.jpeg';
+import Videos from "./Videos";
 
 const GalleryVideos = () => {
   return (
@@ -26,6 +27,7 @@ const GalleryVideos = () => {
         {/* Orange Line */}
         <span className="absolute bottom-0 left-0 w-full h-1 bg-orange-600 z-10"></span>
       </div>
+      <Videos />
       <div>
       <Footer image={logoforfooter}/>
       </div>

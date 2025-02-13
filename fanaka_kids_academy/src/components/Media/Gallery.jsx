@@ -60,7 +60,7 @@ const Gallery = () => {
               className="w-full h-80 object-cover transform hover:scale-105 hover:brightness-75 transition-transform duration-700"
             />
             {image.title && (
-              <div className="absolute inset-0 flex items-center  bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 flex itjustify-centerems-center  bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white text-lg font-semibold text-center">
                   {image.title}
                 </p>
