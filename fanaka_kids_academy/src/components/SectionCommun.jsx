@@ -12,7 +12,7 @@ const SectionCommun = ({ image }) => {
     navigate("/blog"); 
   };
   const handlemediaClick = () => {
-    navigate("/gallery"); 
+    navigate("/images"); 
   };
   return (
     <>
