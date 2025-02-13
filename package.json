@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "aos": "^2.3.4",
     "react-icons": "^5.4.0"
   }
 }
