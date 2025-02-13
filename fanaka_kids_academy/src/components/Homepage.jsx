@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import { useNavigate } from "react-router-dom";
 import picone from '../assets/fanakapicone.jpeg';
 import pictwo from '../assets/fanaka2.jpeg'
 import picthree from '../assets/fanaka3.jpeg'
@@ -17,7 +17,20 @@ import Community from './Community';
 import SectionCommun from './SectionCommun';
 
 
+
 const Homepage = () => {
+
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/about"); 
+  };
+  const handleblogClick = () => {
+    navigate("/blog"); 
+  };
+  const handlecontactClick = () => {
+    navigate("/contact"); 
+  };
+
   return (
     <div className="h-screen">
       
@@ -39,21 +52,21 @@ const Homepage = () => {
          <img src={picone}  alt="fanaka_kids_picture"  className="object-cover w-full h-full" />
            <div className='absolute top-1/2 md:top-96 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10 text-white'>
             <h3 className='text-3xl md:text-5xl font-bold mb-4'>Welcome , Little Explorers!</h3>
-             <button type='button' className='bg-black bg-opacity-60 hover:bg-opacity-90 text-white px-6 py-2 rounded-lg text-xl' > Learn More</button> </div>
+             <button type='button' className='bg-black bg-opacity-60 hover:bg-opacity-90 text-white px-6 py-2 rounded-lg text-xl' onClick={handleClick} > Learn More</button> </div>
         </SwiperSlide>
 
         <SwiperSlide className='relative brightness-75'>
          <img src={pictwo}  alt="fanaka_kids_picture"  className="object-cover w-full h-full" />
            <div className='absolute top-1/2 md:top-96  left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10 text-white'>
             <h3 className='text-3xl md:text-5xl font-bold mb-4'>Adventure Awaits You!</h3>
-             <button type='button' className='bg-black bg-opacity-60 hover:bg-opacity-90 text-white px-6 py-2 rounded-lg text-xl' > Learn More</button> </div>
+             <button type='button' className='bg-black bg-opacity-60 hover:bg-opacity-90 text-white px-6 py-2 rounded-lg text-xl' onClick={handleblogClick} >More on Blog</button> </div>
         </SwiperSlide>
 
         <SwiperSlide className='relative brightness-75'>
          <img src={picthree}  alt="fanaka_kids_picture"  className="object-cover w-full h-full" />
            <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10 text-white'>
             <h3 className='text-3xl md:text-5xl font-bold mb-4'>Play, Learn , Imagine!</h3>
-             <button type='button' className='bg-black bg-opacity-60 hover:bg-opacity-90 text-white px-6 py-2 rounded-lg text-xl' > Learn More</button> </div>
+             <button type='button' className='bg-black bg-opacity-60 hover:bg-opacity-90 text-white px-6 py-2 rounded-lg text-xl' onClick={handlecontactClick} > Contact us</button> </div>
         </SwiperSlide>
       </Swiper>
       </div>

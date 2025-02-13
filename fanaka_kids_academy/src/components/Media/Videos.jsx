@@ -8,7 +8,7 @@ const Videos = () => {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        setVideos(data); // Fixed setVideos
+        setVideos(data);
       })
       .catch((error) => console.error("Error fetching videos:", error));
   }, []);

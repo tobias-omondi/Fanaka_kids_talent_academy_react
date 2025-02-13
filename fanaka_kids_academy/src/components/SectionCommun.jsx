@@ -1,8 +1,19 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import playingchess from '../assets/community4.jpeg';
 import CommunImage from './CommunImage';
 
 const SectionCommun = ({ image }) => {
+  const navigate = useNavigate();
+  const handleblogClick = () => {
+    navigate("/blog"); 
+  };
+  const handleeventsClick = () => {
+    navigate("/blog"); 
+  };
+  const handlemediaClick = () => {
+    navigate("/gallery"); 
+  };
   return (
     <>
       {/* Main container */}
@@ -28,6 +39,7 @@ const SectionCommun = ({ image }) => {
             </p>
             <button
               type='button'
+              onClick={handleblogClick}
               className='bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600'
             >
               Visit
@@ -45,6 +57,7 @@ const SectionCommun = ({ image }) => {
             </p>
             <button
               type='button'
+              onClick={handleeventsClick}
               className='bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600'
             >
               Visit
@@ -61,6 +74,7 @@ const SectionCommun = ({ image }) => {
             </p>
             <button
               type='button'
+              onClick={handlemediaClick}
               className='bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600'
             >
               Visit

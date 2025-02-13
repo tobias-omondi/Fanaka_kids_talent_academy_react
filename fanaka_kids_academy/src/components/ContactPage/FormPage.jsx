@@ -11,14 +11,14 @@ const FormPage = () => {
             <MdWifiCalling3 size={20} className='text-orange-600' />
             <div>
               <h3 className='font-semibold text-gray-500'>Call Us</h3>
-              <p className='text-gray-600'>+123 456 7890</p>
+              <p className='text-gray-600'>+254 725 477 131 <span className='text-orange-500'> || </span>+254 732 218 621</p>
             </div>
           </div>
           <div className='flex items-center space-x-4'>
             <MdOutlineMail size={30} className='text-orange-600' />
             <div>
               <h3 className='font-semibold text-gray-500'>Email Us</h3>
-              <p className='text-gray-600'>support@example.com</p>
+              <p className='text-gray-600'>infofanaka@gmail.com</p>
             </div>
           </div>
           <div className='flex items-center space-x-4'>

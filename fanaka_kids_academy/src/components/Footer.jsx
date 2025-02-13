@@ -33,13 +33,13 @@ const Footer = ({ image }) => {
         </div>
 
         {/* Navigation Links */}
-        <div className="flex flex-1 flex-col items-start md:items-center gap-6 text-white mt-10 md:mt-0">
+        <div className="flex flex-1 flex-col items-start md:items-center gap-6 text-white mt-10 md:mt-0 cursor-pointer">
           <span className="block w-28 h-1 bg-white"></span>
           <a href="/about">ABOUT US</a>
-          <a href="/blog">BLOG</a>
-          <a href="/events">Events & Dates</a>
-          <a href="/games">Game</a>
-          <a href="/">Home</a>
+          <a href="/blog">BLOG & EVENTS</a>
+          <a href="/images">IMAGES</a>
+          <a href="/videos">VIDEOS</a>
+          <a href="/">HOME</a>
         </div>
 
         {/* Contact Section */}
@@ -48,16 +48,18 @@ const Footer = ({ image }) => {
           <span className="block w-28 h-1 bg-white"></span>
           <h4 className='text-start'>CONTACT US</h4>
           <div className="flex flex-col items-start gap-4">
-            <div className="flex items-start gap-2">
-              <TfiEmail />
-              <span>info@fanakakids.com</span>
+             <div className="flex items-start gap-2">
+              <TfiEmail size={20}/>
+              <a href="mailto:info@fanakakids.com" className="text-white hover:underline">
+                 info@fanakakids.com
+              </a>
             </div>
             <div className="flex items-center  gap-2">
-              <MdOutlineCall />
-              <span>+254 725 477 131 || +254 7........</span>
+              <MdOutlineCall size={20}/>
+              <span>+254 725 477 131 <span className='text-orange-500'> || </span>+254 732 218 621</span>
             </div>
             <div className="flex items-center gap-2">
-              <CiLocationOn />
+              <CiLocationOn size={20} />
               <span>Nairobi, Kenya</span>
             </div>
           </div>
