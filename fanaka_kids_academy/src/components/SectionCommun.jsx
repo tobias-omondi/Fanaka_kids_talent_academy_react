@@ -20,7 +20,7 @@ const SectionCommun = ({ image }) => {
   useEffect(() => {
     AOS.init({
       offset: 200,
-      duration: 4000, 
+      duration: 900, 
       once: true, 
     });
   }, []);

@@ -7,7 +7,7 @@ const Community = ({ title, description, image }) => {
      useEffect(() => {
       AOS.init({
         offset: 200,
-        duration: 3000, 
+        duration: 900, 
         once: true, 
       });
     }, []);

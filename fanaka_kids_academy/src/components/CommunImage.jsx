@@ -8,11 +8,11 @@ const CommunImage = ({ image }) => {
   useEffect(() => {
     AOS.init({
       offset: 200,
-      duration: 1000, 
+      duration: 900, 
       once: true, 
     });
   }, []);
-  
+
   return (
     <div className='mt-14 relative'>
       {/* Image */}
