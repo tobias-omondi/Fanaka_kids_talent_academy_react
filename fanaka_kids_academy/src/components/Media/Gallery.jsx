@@ -47,7 +47,7 @@ const Gallery = () => {
   useEffect(() => {
     AOS.init({
       offset: 200,
-      duration: 900, 
+      duration: 500, 
       easing: "ease-in-out",
       once: false, 
     });
