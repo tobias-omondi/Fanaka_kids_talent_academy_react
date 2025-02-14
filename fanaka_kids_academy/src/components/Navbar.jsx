@@ -40,7 +40,9 @@ const Navbar = () => {
       {/* Main Navbar container */}
       <div className="bg-orange-600 p-3 flex items-center justify-between shadow-2xl fixed w-full top-10 z-20">
         {/* Logo for the website */}
+        <a href='/'>
         <img src={logo} alt="logo" className="w-14 rounded-e-md m-3 shadow-xl" />
+        </a>
 
 
 

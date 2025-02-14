@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import picone from '../assets/fanakapicone.jpeg';
 import pictwo from '../assets/fanaka2.jpeg'
 import picthree from '../assets/fanaka3.jpeg'
@@ -15,7 +16,8 @@ import { FaChess } from "react-icons/fa6";
 import { PiMicrophoneStageDuotone } from "react-icons/pi";
 import Community from './Community';
 import SectionCommun from './SectionCommun';
-
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 
 
 const Homepage = () => {
@@ -30,6 +32,15 @@ const Homepage = () => {
   const handlecontactClick = () => {
     navigate("/contact"); 
   };
+
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 900, 
+      easing: "ease-in-out",
+      once: false, 
+    });
+  }, []);
 
 
 
@@ -53,7 +64,8 @@ const Homepage = () => {
         <SwiperSlide className='relative brightness-75'>
          <img src={picone}  alt="fanaka_kids_picture"  className="object-cover w-full h-full" />
            <div className='absolute top-1/2 md:top-96 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10 text-white'>
-            <h3 className='text-3xl md:text-5xl font-bold mb-4'>Welcome , Little Explorers!</h3>
+            <h3 className='text-3xl md:text-5xl font-bold mb-4' data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">Welcome , Little Explorers!</h3>
              <button type='button' className='bg-black bg-opacity-60 hover:bg-opacity-90 text-white px-6 py-2 rounded-lg text-xl' onClick={handleClick} > Learn More</button> </div>
         </SwiperSlide>
 
