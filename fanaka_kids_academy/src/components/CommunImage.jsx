@@ -15,9 +15,10 @@ const CommunImage = ({ image }) => {
   }, []);
 
   return (
-    <div className='mt-14 relative'>
+    <div className='mt-14 relative' data-aos="fade-up"
+    data-aos-duration="3000">
       {/* Image */}
-      <img src={image} alt='children_playing_chess' className='w-full max-h-96  object-cover' data-aos ="fade-up"/>
+      <img src={image} alt='children_playing_chess' className='w-full max-h-96  object-cover'/>
 
       {/* Overlay Text and Button */}
       <div className='absolute top-32 md:top-1/4 md:left-72 left-32 transform -translate-x-1/2 -translate-y-1/2 text-center z-10 text-white'>
