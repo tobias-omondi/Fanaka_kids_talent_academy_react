@@ -1,12 +1,22 @@
-import React from 'react';
+import { useEffect } from 'react';
 import Footer from './Footer';
 import logoforfooter from '../assets/fanakakidslogo.jpeg'
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 
 const CommunImage = ({ image }) => {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 1000, 
+      once: true, 
+    });
+  }, []);
+  
   return (
     <div className='mt-14 relative'>
       {/* Image */}
-      <img src={image} alt='children_playing_chess' className='w-full max-h-96  object-cover'/>
+      <img src={image} alt='children_playing_chess' className='w-full max-h-96  object-cover' data-aos ="fade-up"/>
 
       {/* Overlay Text and Button */}
       <div className='absolute top-32 md:top-1/4 md:left-72 left-32 transform -translate-x-1/2 -translate-y-1/2 text-center z-10 text-white'>

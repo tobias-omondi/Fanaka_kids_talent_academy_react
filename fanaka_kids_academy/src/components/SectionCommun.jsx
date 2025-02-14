@@ -1,7 +1,9 @@
-import React from 'react';
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import playingchess from '../assets/community4.jpeg';
 import CommunImage from './CommunImage';
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 
 const SectionCommun = ({ image }) => {
   const navigate = useNavigate();
@@ -14,6 +16,15 @@ const SectionCommun = ({ image }) => {
   const handlemediaClick = () => {
     navigate("/images"); 
   };
+
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 4000, 
+      once: true, 
+    });
+  }, []);
+
   return (
     <>
       {/* Main container */}
@@ -24,11 +35,12 @@ const SectionCommun = ({ image }) => {
             src={image}
             alt='child_dancing'
             className='w-80 h-96 md:w-96 md:h-96 object-cover rounded-lg shadow-md mt-7 md:mt-0'
+            data-aos = "fade-up-right"
           />
         </div>
 
         {/* Cards container */}
-        <div className='w-full md:w-2/3 mt-8 md:mt-14 flex flex-col gap-5 md:absolute md:left-1/4 md:top-9 md:flex md:flex-row items-center md:max-h-80 md:max-w-3/4'>
+        <div className='w-full md:w-2/3 mt-8 md:mt-14 flex flex-col gap-5 md:absolute md:left-1/4 md:top-9 md:flex md:flex-row items-center md:max-h-80 md:max-w-3/4' data-aos="fade-up">
           {/* Card 1 */}
           <div className='bg-white shadow-2xl text-center p-6 rounded-lg w-80 md:w-full'>
             <h3 className='text-2xl font-semibold text-gray-600 mb-4'>

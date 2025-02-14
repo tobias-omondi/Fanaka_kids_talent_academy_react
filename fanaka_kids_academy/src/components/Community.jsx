@@ -4,11 +4,10 @@ import "aos/dist/aos.css";
 
 const Community = ({ title, description, image }) => {
 
-     // Initialize AOS
      useEffect(() => {
       AOS.init({
         offset: 200,
-        duration: 1000, 
+        duration: 3000, 
         once: true, 
       });
     }, []);
@@ -23,14 +22,14 @@ const Community = ({ title, description, image }) => {
           <span className="block w-28 h-1 bg-yellow-500 mt-2"></span>
         </h2>
         <div className='underline-offset-auto'></div>
-        <p className="text-gray-700 text-lg lg:text-xl">
+        <p className="text-gray-700 text-lg lg:text-xl" data-aos="fade-up">
           {description}
         </p>
       </div>
 
       {/* Image */}
-      <div className="w-full lg:w-1/2 flex justify-center lg:justify-end" data-aos = "fade-right">
-        <img src={image} alt="A child dancing" className="w-72 h-96 lg:w-96 lg:h-96 object-cover rounded-lg shadow-md"/>
+      <div className="w-full lg:w-1/2 flex justify-center lg:justify-end" >
+        <img src={image} alt="A child dancing" className="w-72 h-96 lg:w-96 lg:h-96 object-cover rounded-lg shadow-md" data-aos = "fade-up-left"/>
       </div>
     </div>
   );
