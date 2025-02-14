@@ -9,7 +9,7 @@ const Community = ({ title, description, image }) => {
         offset: 200,
         duration: 900, 
         easing: "ease-in-out",
-        once: true, 
+        once: false, 
       });
     }, []);
 
