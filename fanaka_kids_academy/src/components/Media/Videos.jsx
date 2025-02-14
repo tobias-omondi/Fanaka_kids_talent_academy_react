@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 
 const Videos = () => {
   const [videos, setVideos] = useState([]);
@@ -13,6 +15,15 @@ const Videos = () => {
       .catch((error) => console.error("Error fetching videos:", error));
   }, []);
 
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 900, 
+      easing: "ease-in-out",
+      once: false, 
+    });
+  }, []);
+
   return (
     <div className="container mx-auto px-2 py-2">
       <h2 className="text-center text-3xl font-bold mb-8 text-red-800">Videos</h2>
@@ -25,7 +36,8 @@ const Videos = () => {
             <video
               src={`http://127.0.0.1:8000${video.video}`}
               controls
-              className="w-full h-auto rounded-lg"
+              className="w-full h-auto rounded-lg" data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
             />
           </div>
         ))}

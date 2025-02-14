@@ -16,7 +16,7 @@ const CommunImage = ({ image }) => {
 
   return (
     <div className='mt-14 relative' data-aos="fade-up"
-    data-aos-duration="3000">
+    data-aos-duration="500">
       {/* Image */}
       <img src={image} alt='children_playing_chess' className='w-full max-h-96  object-cover'/>
 

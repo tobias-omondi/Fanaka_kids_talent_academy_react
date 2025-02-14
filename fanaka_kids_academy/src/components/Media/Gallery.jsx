@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { IoIosClose } from "react-icons/io";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 
 const Gallery = () => {
   const [images, setImages] = useState([]);
@@ -42,6 +44,15 @@ const Gallery = () => {
     );
   };
 
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 900, 
+      easing: "ease-in-out",
+      once: false, 
+    });
+  }, []);
+
 
 
   return (
@@ -51,13 +62,14 @@ const Gallery = () => {
         {images.map((image, index) => (
           <div
             key={image.id}
-            className="relative overflow-hidden  shadow-xl hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+            className="relative overflow-hidden  shadow-xl hover:shadow-xl transition-shadow duration-300 cursor-pointer" 
             onClick={() => openModal(image, index)} // Open modal on click and pass the index
           >
             <img
               src={`http://127.0.0.1:8000${image.image}`}
               alt={image.title || "Gallery Image"}
-              className="w-full h-80 object-cover transform hover:scale-105 hover:brightness-75 transition-transform duration-700"
+              className="w-full h-80 object-cover transform hover:scale-105 hover:brightness-75 transition-transform duration-700" data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
             />
             {image.title && (
               <div className="absolute inset-0 flex itjustify-centerems-center  bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">

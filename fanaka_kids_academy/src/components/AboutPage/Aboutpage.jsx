@@ -1,4 +1,4 @@
-import React from 'react';
+import {useEffect} from 'react';
 import fanakabout from "/src/assets/fanakaabout.jpeg";
 import Footer from '../Footer';
 import logoforfooter from '/src/assets/fanakakidslogo.jpeg';
@@ -9,10 +9,20 @@ import testmonialimage2 from '/src/assets/momm.jpeg'
 import testmonialimage3 from '/src/assets/dad.jpeg'
 import testmonialimage4 from '/src/assets/mammy.jpg'
 import testmonialimage5 from '/src/assets/ddg_21262678.jpg'
-import { Sliders } from 'lucide-react';
-import { title } from 'motion/react-client';
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 
 const Aboutpage = () => {
+
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 900, 
+      easing: "ease-in-out",
+      once: false, 
+    });
+  }, []);
+
   const slide = [
     {
       image: testmonialimage1,
@@ -52,7 +62,7 @@ const Aboutpage = () => {
       <div className='flex flex-col-reverse md:flex-row items-center justify-center mt-10 gap-10'>
         <img src={mainpicture} alt='picture of children' className='object-cover w-5/6 md:w-2/5 drop-shadow-2xl' />
         
-        <div className='flex flex-col text-center md:text-left max-w-2xl'>
+        <div className='flex flex-col text-center md:text-left max-w-2xl' data-aos ='fade-up'>
           <div className='mt-5 text-center'>
             <h3 className='text-red-800 text-2xl md:text-4xl font-semibold'>Mission Statement</h3>
             <p className='text-gray-600 mt-2 max-w-md mx-auto text-center md:max-w-lg md:text-left'>

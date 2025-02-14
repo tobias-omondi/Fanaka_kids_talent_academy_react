@@ -35,8 +35,7 @@ const SectionCommun = ({ image }) => {
           <img
             src={image}
             alt='child_dancing'
-            className='w-80 h-96 md:w-96 md:h-96 object-cover rounded-lg shadow-md mt-7 md:mt-0'
-            data-aos = "fade-up-right"
+            className='w-80 h-96 md:w-96 md:h-96 object-cover rounded-lg shadow-lg mt-7 md:mt-0'
           />
         </div>
 
