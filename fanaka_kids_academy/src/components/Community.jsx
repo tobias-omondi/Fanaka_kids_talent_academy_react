@@ -8,6 +8,7 @@ const Community = ({ title, description, image }) => {
       AOS.init({
         offset: 200,
         duration: 900, 
+        easing: "ease-in-out",
         once: true, 
       });
     }, []);
