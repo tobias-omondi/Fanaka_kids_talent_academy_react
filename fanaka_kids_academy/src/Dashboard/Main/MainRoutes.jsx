@@ -1,8 +1,17 @@
-import { Navigate } from "react-router-dom"
+import { Navigate } from "react-router-dom";
+import DashboardNavbar from "./DashboardNavbar";
 
 const MainRoutes = ({ element, isAdmin }) => {
-  return isAdmin ? element : <Navigate to="/fanaka-dashboard" />;
+  if (!isAdmin) {
+    return <Navigate to="/" />; // Redirect non-admin users to the homepage
+  }
+
+  return (
+    <div>
+      <DashboardNavbar />
+      {element}
+    </div>
+  );
 };
 
-
-export default MainRoutes
+export default MainRoutes;
