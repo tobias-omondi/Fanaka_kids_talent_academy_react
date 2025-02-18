@@ -1,11 +1,8 @@
-import React from 'react'
+import { Navigate } from "react-router-dom"
 
-const MainRoutes = () => {
-  return (
-    <div>
-      {/* here we will route the pages */}
-    </div>
-  )
-}
+const MainRoutes = ({ element, isAdmin }) => {
+  return isAdmin ? element : <Navigate to="/fanaka-dashboard" />;
+};
+
 
 export default MainRoutes
