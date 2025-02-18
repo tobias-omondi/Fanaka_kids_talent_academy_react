@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 import { CiSettings } from 'react-icons/ci';
 import { MdDarkMode, MdNotifications } from 'react-icons/md';
+import SideNavbar from './SideNavbar';
 
 const DashboardNavbar = () => {
-  // State to manage dark mode toggle
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // Function to toggle dark mode
   const toggleDarkMode = () => {
     setIsDarkMode(prevMode => !prevMode);
   };
 
   return (
+    <>
     <div
-      className={`bg-white shadow-1xl fixed top-0 w-full z-20 transition-all ${isDarkMode ? 'bg-gray-900 text-orange-300' : 'bg-white text-orange-500'}`}
+      className={`bg-white shadow-1xl relative top-0 w-full z-20 transition-all ${isDarkMode ? 'bg-gray-900 text-orange-300' : 'bg-white text-orange-500'}`}
     >
       <ul className="w-full text-3xl flex justify-end gap-10 p-2 shadow-md">
         <li>
@@ -33,6 +33,8 @@ const DashboardNavbar = () => {
         </li>
       </ul>
     </div>
+    <SideNavbar />
+    </>
   );
 };
 
