@@ -29,6 +29,7 @@ function AppContent() {
         <Route path="/blog" element={<MainBlog />} />
         <Route path="/images" element={<GalleryImagepage />} />
         <Route path="/videos" element={<GalleryVideos />} />
+        
         <Route
           path="/fanaka-dashboard"
           element={<MainRoutes isAdmin={isAdmin} />}
