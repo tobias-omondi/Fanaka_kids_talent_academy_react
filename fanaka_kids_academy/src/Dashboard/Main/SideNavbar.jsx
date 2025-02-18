@@ -9,8 +9,8 @@ import { CiSettings } from 'react-icons/ci';
 const SideNavbar = () => {
   return (
     <div className='absolute top-0 w-2/12 z-30'>
-      <div className='bg-slate-50 shadow-md'>
-        <ul className='py-20 h-lvh m-5 flex flex-col gap-8'>
+      <div className='bg-white shadow-md h-screen'>
+        <ul className='py-16 m-5 flex flex-col gap-8'>
             <li>
                 <a href='/fanaka-dashboard-admin' className='flex flex-row gap-5'><MdAdminPanelSettings/>    ADMIN</a>
             </li>
