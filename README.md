@@ -1,6 +1,6 @@
 # Fanaka Kids Talent Academy
 
-Fanaka Kids Talent Academy is a React-based frontend application built using Vite. The website showcases various programs offered by the academy, including Ballet, Public Speaking, and Chess.
+Fanaka Kids Talent Academy is a frontend web application built with React and Vite. The website showcases a school that offers programs in Ballet, Public Speaking, and Chess. The application is designed with a modern and responsive user interface, leveraging Tailwind CSS for styling, React Icons and Lucide for icons, and AOS (Animate On Scroll) for animations.
 
 ## Features
 - **Fast and Modern Setup:** Built with React and Vite for optimized performance.
