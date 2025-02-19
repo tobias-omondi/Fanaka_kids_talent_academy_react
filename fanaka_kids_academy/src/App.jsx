@@ -31,7 +31,7 @@ function AppContent() {
         <Route path="/videos" element={<GalleryVideos />} />
         
         <Route
-          path="/fanaka-dashboard"
+          path="/fanaka-dashboard/*"
           element={<MainRoutes isAdmin={isAdmin} />}
         />
       </Routes>
