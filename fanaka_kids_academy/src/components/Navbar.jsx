@@ -18,27 +18,8 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Social icons section */}
-      <div className="bg-white shadow-1xl fixed top-0 w-full z-20">
-        <ul className="bg-slate-200 w-60 text-3xl flex justify-evenly p-2 ml-auto shadow-2xl rounded-s-2xl">
-          <li>
-            <a href="#" className="text-black hover:text-gray-800">
-              <AiFillTikTok />
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-green-600 hover:text-green-300">
-              <AiOutlineWhatsApp />
-            </a>
-          </li>
-        </ul>
-      </div>
-
-
-
-
       {/* Main Navbar container */}
-      <div className="bg-orange-600 p-3 flex items-center justify-between shadow-2xl fixed w-full top-10 z-20">
+      <div className="bg-orange-600 p-2 flex items-center justify-between shadow-2xl fixed w-full top-0 z-20">
         {/* Logo for the website */}
         <a href='/'>
         <img src={logo} alt="logo" className="w-14 rounded-e-md m-3 shadow-xl" />

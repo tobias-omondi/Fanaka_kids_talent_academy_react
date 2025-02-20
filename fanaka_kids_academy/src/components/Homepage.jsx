@@ -47,7 +47,7 @@ const Homepage = () => {
   return (
     <div className="h-screen">
       
-      <div className='mt-28'>
+      <div className='mt-1'>
       <Swiper
       modules={[Pagination , Autoplay , Navigation]}
       navigation = {true}
