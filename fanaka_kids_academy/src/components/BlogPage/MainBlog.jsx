@@ -8,7 +8,7 @@ import StudentsBlog from './StudentsBlog';
 
 const MainBlog = () => {
   return (
-    <div className='mt-28'>
+    <div className='mt-5'>
       <LandingPage />
       <SectionTwo/>
       <StudentsBlog/>

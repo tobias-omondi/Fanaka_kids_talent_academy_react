@@ -5,7 +5,7 @@ import FormPage from './FormPage';
 
 const Contactpage = () => {
   return (
-    <div className='mt-48'>
+    <div className='mt-32'>
 
       <div className='flex flex-1 flex-row justify-center items-center bg-white'>
 

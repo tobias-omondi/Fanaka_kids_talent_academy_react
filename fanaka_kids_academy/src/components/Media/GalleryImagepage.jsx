@@ -6,8 +6,8 @@ import logoforfooter from '/src/assets/fanakakidslogo.jpeg';
 
 const GalleryImagepage = () => {
   return (
-    <div className="mt-32 md:mt-0 relative">
-      <div className="relative w-full h-64 md:h-screen">
+    <div className="mt-5 relative">
+      <div className="relative w-full h-64 md:h-96">
         <img
           src={galleryImage}
           alt="gallery cover"

@@ -52,7 +52,7 @@ const Aboutpage = () => {
   ];
   
   return (
-    <div className='mt-32 md:mt-28'>
+    <div className='mt-1 md:mt-28'>
       {/* Centering the image */}
       <div className='flex justify-center items-center'>
         <img src={fanakabout} alt='children_images' className='object-cover w-full max-h-96 rounded-b-3xl opacity-100 brightness-100' />
