@@ -7,7 +7,7 @@ const FormPage = () => {
   const notyf = new Notyf();
 
   const [formData, setFormData] = useState({
-    name: '',
+    parent_name: '', // Use consistent keys
     email: '',
     message: '',
   });
@@ -17,13 +17,29 @@ const FormPage = () => {
     setFormData({ ...formData, [id]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const { name, email, message } = formData;
+    const { parent_name, email, message } = formData;
 
-    if (name && email && message) {
-      notyf.success('Message sent successfully!');
-      setFormData({ name: '', email: '', message: '' });
+    if (parent_name && email && message ) {
+      try {
+        const response = await fetch('http://127.0.0.1:8000/message/', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+          notyf.success('Message sent successfully!');
+          setFormData({ parent_name: '', email: '', message: '', phone_number: '' });
+        } else {
+          notyf.error('Failed to send message. Please try again.');
+        }
+      } catch (error) {
+        notyf.error('An error occurred. Please try again.');
+      }
     } else {
       notyf.error('Please fill out all fields.');
     }
@@ -62,15 +78,15 @@ const FormPage = () => {
       <div className='bg-white p-8 rounded-lg shadow-lg w-full max-w-md'>
         <form onSubmit={handleSubmit}>
           <h3 className='text-center text-2xl font-bold mb-6 text-gray-800'>Send Message</h3>
-          
+
           <div className='mb-4'>
-            <label htmlFor='name' className='block text-sm font-medium text-gray-700'>
+            <label htmlFor='parent_name' className='block text-sm font-medium text-gray-700'>
               Name
             </label>
             <input
               type='text'
-              id='name'
-              value={formData.name}
+              id='parent_name' // Match the key in formData
+              value={formData.parent_name}
               onChange={handleChange}
               className='mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500'
               placeholder='Enter your name'
