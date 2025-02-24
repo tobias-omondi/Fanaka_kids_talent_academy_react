@@ -99,8 +99,7 @@ const Homepage = () => {
       </div>
       <Community 
       title="A community of young talents,offering Ballet, Chess and Public Speaking Perfomance" 
-      description="A vibrant community of young talent is coming together to showcase their extraordinary abilities.
-From the graceful movements of ballet dancers to the strategic minds of chess players and the captivating orators, these children are poised to inspire and amaze. Their performances promise to be a delightful blend of artistry, intellect, eloquence, and public speaking."
+      description="A lively group of young talents is coming together to show their amazing skills. From ballet dancers' smooth moves to chess players' smart strategies and confident speakers, these children are ready to impress. Their performances will be a wonderful mix of art, ideas, and speaking skills."
       image = {childimage}
       />
       <SectionCommun image={childimage2} />

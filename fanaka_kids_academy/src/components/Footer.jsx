@@ -1,5 +1,6 @@
 import React from 'react';
 import { CiLocationOn } from 'react-icons/ci';
+import { FaTiktok, FaWhatsapp } from 'react-icons/fa6';
 import { MdOutlineCall } from 'react-icons/md';
 import { TfiEmail } from 'react-icons/tfi';
 
@@ -7,7 +8,7 @@ const Footer = ({ image }) => {
   return (
     <>
     <div className='bg-orange-600 py-5 md:py-10 justify-center'>
-        <p className='text-center text-white text-1xl mx-9 md:mx-0 md:text-2xl'>GET INVOLVED WITH FANAKA TALENT ACADEMY.</p>
+        <p className='text-center text-white text-1xl mx-9 md:mx-0 md:text-2xl'>GET INVOLVED WITH FANAKA KIDS TALENT ACADEMY.</p>
       </div>
     <div className="bg-red-800 py-12">
       {/* Main components */}
@@ -50,7 +51,7 @@ const Footer = ({ image }) => {
           <div className="flex flex-col items-start gap-4">
              <div className="flex items-start gap-2">
               <TfiEmail size={20}/>
-              <a href="mailto:info@fanakakids.com" className="text-white hover:underline">
+              <a href="mailto:fanakakidsinfo@gmail.com" className="text-white hover:underline">
                  info@fanakakids.com
               </a>
             </div>
@@ -61,6 +62,16 @@ const Footer = ({ image }) => {
             <div className="flex items-center gap-2">
               <CiLocationOn size={20} />
               <span>Nairobi, Kenya</span>
+            </div>
+
+            {/* what's app icon and tiktok with icons */}
+            <div className='flex flex-row gap-5'>
+              <a href='https://www.tiktok.com/@fanaka024?_t=ZM-8uB5EJHCibF&_r=1'>
+                <FaTiktok size={20} className='text-black hover:text-gray-800'/>
+              </a>
+              <a href=''>
+                <FaWhatsapp size={20} className='text-green-400 hover:text-green-600'/>
+              </a>
             </div>
           </div>
         </div>

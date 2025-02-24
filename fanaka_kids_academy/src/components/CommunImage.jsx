@@ -23,7 +23,7 @@ const CommunImage = ({ image }) => {
       {/* Overlay Text and Button */}
       <div className='absolute top-32 md:top-1/4 md:left-72 left-32 transform -translate-x-1/2 -translate-y-1/2 text-center z-10 text-white'>
         <h2 className='text-2xl text-start md:text-5xl font-bold mb-4'>
-          What does Fanaka <br/> Talent Offer to <br/> your Child?<br/> 
+        Fanaka kids <br/> Academy Talent<br/> builds your child's<br/> skills and creativity.
         </h2>
         {/* <button
           type='button'
